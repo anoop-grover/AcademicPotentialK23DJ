@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="style/result.css" />
+</head>
+<body>
+  <header>
+    <h1>Evaluating Academic Potential</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="predict.html">Predict</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="result-container">
+    <div class="result-text">
+      <h2>Result</h2>
+      <p>Your predicted employment potential score is:</p>
+      <div id="scoreBox">--%</div>
+      <a href="predict.html"><button>Try Again</button></a>
+    </div>
+    <div class="result-img">
+      <img src="assets/result-illustration.png" alt="Result Graph" />
+    </div>
+  </main>
+
+  <script>
+    // Simulate score fetch from backend or URL
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get("score") || "--";
+    document.getElementById("scoreBox").textContent = `${score}%`;
+  </script>
+</body>
+</html>

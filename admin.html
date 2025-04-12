@@ -1,0 +1,67 @@
+<?php
+session_start();
+if (!isset($_SESSION["logged_in"])) {
+    header("Location: admin_login.html");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin | Stored Predictions</title>
+  <link rel="stylesheet" href="style/admin.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="backend/logout.php">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Stored Predictions</h2>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>GPA</th>
+          <th>Activities</th>
+          <th>Study Hours</th>
+          <th>Recommendation</th>
+          <th>Score (%)</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script>
+    fetch("backend/get_predictions.php")
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.querySelector("#dataTable tbody");
+        data.forEach(entry => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${entry.course}</td>
+            <td>${entry.gpa}</td>
+            <td>${entry.activities}</td>
+            <td>${entry.hours}</td>
+            <td>${entry.recommendation}</td>
+            <td>${entry.score}</td>
+            <td>${entry.timestamp}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      })
+      .catch(err => {
+        console.error("Error loading predictions:", err);
+      });
+  </script>
+</body>
+</html>
