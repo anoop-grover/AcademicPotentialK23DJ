@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$USERNAME = "anoopgroverrr";
-$PASSWORD = "AcademicPotential123"; // Change if you like
+$USERNAME = "//Privacy on known to developer";
+$PASSWORD = "//Privacy on known to developer"; // Change if you like
 
 $inputUser = $_POST["username"];
 $inputPass = $_POST["password"];
