@@ -126,9 +126,20 @@ Student, B.Tech Computer Science & Engineering, Lovely Professional University, 
 
 ## 📷 Preview (Optional)
 
-> Add screenshots of each webpage here using markdown:
-
-
+> Home Page --> index.html
 ![Home Page](screenshots/home.png)
-![Predict Page](screenshots/predict.png)
-![Admin Dashboard](screenshots/admin.png)
+
+> About Page --> about.html
+![About Page](screenshots/about.png)
+
+> Prediction Page --> predict.html
+![Prediction Page](screenshots/prediction.png)
+
+> Result Page --> result.html
+![Result Page](screenshots/result.png)
+
+> Admin Login Page --> admin_login.html
+![Admin Login Dashboard](screenshots/admin_login.png)
+
+> Admin Panel Page --> admin.html
+![Admin Panel Dashboard](screenshots/admin_panel.png)
