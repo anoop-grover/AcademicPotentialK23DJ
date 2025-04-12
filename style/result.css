@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #222;
+  }
+  
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #083c6c;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 22px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+  }
+  
+  .result-text {
+    max-width: 45%;
+  }
+  
+  .result-text h2 {
+    font-size: 26px;
+    color: #083c6c;
+    margin-bottom: 10px;
+  }
+  
+  #scoreBox {
+    font-size: 48px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #0078d7;
+  }
+  
+  .result-text button {
+    padding: 12px 20px;
+    background-color: #083c6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .result-text button:hover {
+    background-color: #0956a5;
+  }
+  
+  .result-img img {
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+  }
+  

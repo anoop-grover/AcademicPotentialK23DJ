@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #222;
+  }
+  
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #083c6c;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 22px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .predict-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;
+  }
+  
+  .form-container {
+    max-width: 45%;
+  }
+  
+  .form-container h2 {
+    font-size: 26px;
+    color: #083c6c;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #083c6c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #0956a5;
+  }
+  
+  .predict-img img {
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+  
