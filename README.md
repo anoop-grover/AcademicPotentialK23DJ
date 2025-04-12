@@ -128,7 +128,7 @@ Student, B.Tech Computer Science & Engineering, Lovely Professional University, 
 
 > Add screenshots of each webpage here using markdown:
 
-```markdown
+
 ![Home Page](screenshots/home.png)
 ![Predict Page](screenshots/predict.png)
 ![Admin Dashboard](screenshots/admin.png)
